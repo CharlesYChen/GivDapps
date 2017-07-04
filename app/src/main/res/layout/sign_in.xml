@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in"
+    tools:context="com.aznchar.givdapps.SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:weightSum="1">
+
+        <!--invisible button taking up a percentage of screen space
+        to move other icons further down
+        in general, need help on scaling for this entire thing-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55"
+            android:background="@android:color/transparent">
+        </Button>
+
+
+        <!--need help on scaling word size to screensize-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:text="Welcome!"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+
+        <!--also might want to add a thin borderline around these
+        edittexts, not sure how yet-->
+        <EditText
+            android:id="@+id/email_address"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:hint="Enter Email Address"
+            android:gravity="center"
+            android:textColorHint="@drawable/edittext_selector"
+            />
+
+        <!--same problem as above-->
+        <EditText
+            android:id="@+id/enter_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:hint="Password"
+            android:gravity="center"
+            android:textColorHint="@drawable/edittext_selector"/>
+
+        <!--need to change color to match dropbox image, might
+        crop the dropbox image to use as imagebutton-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/orange"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:onClick="introButton" />
+    </LinearLayout>
+
+
+</RelativeLayout>

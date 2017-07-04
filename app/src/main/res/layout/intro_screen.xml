@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_background"
+    tools:context="com.aznchar.givdapps.IntroScreen">
+
+    <!--in general, need help on scaling for entire thing. i was trying
+    to do it with layout_weight but it doesnt work when i use nested
+    linearlayouts-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/slidingImages"
+        android:weightSum="1">
+
+        <!--viewpager is the sliding images; right now i just have
+        placeholder images;-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/intro_screen_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+        </android.support.v4.view.ViewPager>
+
+        //viewpage tab indicator
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:onClick="interestButton"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/gray"
+            android:layout_weight="0.07"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:background="@color/facebook_blue"
+            android:text="Sign Up With Facebook"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+        <!--need to figure out how to not have the button take up
+        the entire width, and instead just wrap around the
+        text size which should scale in size with screen size-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.04"
+            android:background="@android:color/transparent"
+            android:text="Already have an account?"
+            android:textColor="@color/facebook_blue"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:onClick="signInButton"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</RelativeLayout>
