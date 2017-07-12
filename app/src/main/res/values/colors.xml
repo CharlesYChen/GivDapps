@@ -4,10 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="gray">#7d7d7d</color>
-    <color name="gray">#F2F2F2</color>
     <color name="white">#ffffff</color>
-    <color name="yellow">#F0A83D</color>
     <color name="facebook_blue">#3b5998</color>
     <color name="orange">#ffad33</color>
-    <color name = "grayText">#b9b8b7</color>
 </resources>
