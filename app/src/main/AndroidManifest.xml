@@ -28,12 +28,16 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".SignIn"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".CausesNavigationDrawer"
-            android:label="@string/title_activity_causes_navigation_drawer"
-            android:theme="@style/AppTheme"></activity>
+            android:label="Campaign"
+            android:theme="@style/AppTheme"/>
+
         <activity android:name=".InterestScreen"></activity>
+        <activity
+            android:name=".SignUpScreen"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
