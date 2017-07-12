@@ -28,8 +28,8 @@ public class IntroScreen extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabDots);
         tabLayout.setupWithViewPager(viewPager, true);
     }
-    public void interestButton(View view){
-        Intent intent = new Intent(this, InterestScreen.class);
+    public void signUpScreen(View view){
+        Intent intent = new Intent(this, SignUpScreen.class);
         startActivity(intent);
     }
     public void signInButton(View view){

@@ -17,4 +17,23 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/OverflowButton</item>-->
+        <!--<item name="actionOverflowButtonStyle">@style/OverflowButton</item>-->
+    </style>
+
+    <!--modifies button on right side-->
+    <!--<style name="OverflowButton" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">-->
+        <!--<item name="android:src">@drawable/ic_more_vert_white_18dp</item>-->
+    <!--</style>-->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/white</item>
+        <!--<item name="android:titleTextStyle">@style/MyActionBarTitleText</item>-->
+        <!--<item name="titleTextStyle">@style/MyActionBarTitleText</item>-->
+    </style>
+    <!--<style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">-->
+        <!--<item name="android:textColor">@color/gray </item>-->
+    <!--</style>-->
 </resources>

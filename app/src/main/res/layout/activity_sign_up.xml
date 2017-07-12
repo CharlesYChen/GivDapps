@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.limda_000.givdappssignup.SignUp"
+    tools:context="com.aznchar.givdapps.SignUpScreen"
     android:background="@drawable/app_background"
 
     >
@@ -28,13 +28,33 @@
         app:srcCompat="@drawable/whitebox"
         app:layout_constraintHorizontal_bias="0.0" />
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgPicture"
+        />
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile_image"
+        android:layout_centerVertical="true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_action_name"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="imageGallery"/>
+
     <Button
         android:id="@+id/doneButton"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:background="@color/yellow"
+        android:background="@color/orange"
         android:text="Done"
         android:textAllCaps="false"
+        android:onClick="interestButton"
 
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="@+id/whiteBackground"
@@ -52,7 +72,7 @@
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="@+id/whiteBackground"
         android:layout_marginLeft="8dp"
-        android:textColor="@color/grayText"
+        android:textColor="@color/gray"
         app:layout_constraintLeft_toLeftOf="@+id/whiteBackground" />
     <TextView
         android:id="@+id/lNView"
@@ -63,7 +83,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/fNText"
         android:layout_marginLeft="8dp"
-        android:textColor="@color/grayText"
+        android:textColor="@color/gray"
         app:layout_constraintLeft_toLeftOf="@+id/whiteBackground" />
 
     <TextView
@@ -72,7 +92,8 @@
         android:layout_height="wrap_content"
         android:text="Email"
         android:layout_marginStart="24dp"
-        android:textColor="@color/grayText"
+        android:layout_marginLeft="24dp"
+        android:textColor="@color/gray"
         tools:layout_editor_absoluteY="444dp"
         app:layout_constraintTop_toBottomOf="@+id/lNText"
         app:layout_constraintLeft_toLeftOf="@+id/whiteBackground"
@@ -84,7 +105,7 @@
         android:layout_height="wrap_content"
         android:text="Password"
         android:layout_marginStart="24dp"
-        android:textColor="@color/grayText"
+        android:textColor="@color/gray"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/emailText"
         android:layout_marginLeft="8dp"
@@ -97,7 +118,7 @@
         android:ems="13"
         android:hint=""
         android:inputType="none"
-        android:backgroundTint="@color/grayText"
+        android:backgroundTint="@color/gray"
         android:layout_marginTop="1dp"
         app:layout_constraintTop_toBottomOf="@+id/fNView"
         android:layout_marginLeft="21dp"
@@ -111,7 +132,7 @@
         android:ems="13"
         android:hint=""
         android:inputType="none"
-        android:backgroundTint="@color/grayText"
+        android:backgroundTint="@color/gray"
         android:layout_marginTop="1dp"
         app:layout_constraintTop_toBottomOf="@+id/lNView"
         android:layout_marginLeft="21dp"
@@ -125,7 +146,7 @@
         android:ems="13"
         android:hint=""
         android:inputType="none"
-        android:backgroundTint="@color/grayText"
+        android:backgroundTint="@color/gray"
         android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/emailView"
         android:layout_marginLeft="20dp"
@@ -139,7 +160,7 @@
         android:ems="13"
         android:hint=""
         android:inputType="textWebPassword"
-        android:backgroundTint="@color/grayText"
+        android:backgroundTint="@color/gray"
         android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/passwordView"
         android:layout_marginLeft="20dp"
@@ -149,19 +170,19 @@
         app:layout_constraintRight_toRightOf="@+id/whiteBackground"
         app:layout_constraintHorizontal_bias="0.0" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/profile_image"
-        app:civ_border_color="@color/colorPrimaryDark"
-        app:civ_border_width="2dp"
-        android:layout_centerVertical="true"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/ic_action_name"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:id="@+id/profile_image"-->
+        <!--app:civ_border_color="@color/colorPrimaryDark"-->
+        <!--app:civ_border_width="2dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:src="@drawable/ic_action_name"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent" />-->
 
 </android.support.constraint.ConstraintLayout>
