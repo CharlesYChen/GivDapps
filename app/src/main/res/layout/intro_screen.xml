@@ -43,17 +43,24 @@
             android:background="@color/white"
             android:onClick="signUpScreen"
             android:text="@string/sign_up"
+            android:textSize="15sp"
             android:textAllCaps="false"
             android:textColor="@color/gray"
-            android:layout_weight="0.07"/>
+            android:layout_weight="0.07"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.07"
+            android:textSize="15sp"
             android:background="@color/facebook_blue"
             android:text="Sign Up With Facebook"
             android:textColor="@color/white"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
 
         <!--need to figure out how to not have the button take up
         the entire width, and instead just wrap around the
@@ -62,6 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.04"
+            android:layout_marginRight="20dp"
             android:background="@android:color/transparent"
             android:text="Already have an account?"
             android:textColor="@color/facebook_blue"
