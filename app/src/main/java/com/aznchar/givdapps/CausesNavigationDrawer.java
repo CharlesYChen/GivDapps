@@ -82,18 +82,22 @@ public class CausesNavigationDrawer extends AppCompatActivity
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_first_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new FirstFragment()).commit();
-        } else if (id == R.id.nav_second_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new SecondFragment()).commit();
-        } else if (id == R.id.nav_third_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new ThirdFragment()).commit();
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        if (id == R.id.nav_favorites) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new FavoritesFragment()).commit();
+        } else if (id == R.id.nav_calendar) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new CalendarFragment()).commit();
+        } else if (id == R.id.nav_donations) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new DonationsFragment()).commit();
+        } else if (id == R.id.nav_history) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new HistoryFragment()).commit();
+        } else if (id == R.id.nav_invite_your_friends ) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new InviteYourFriendsFragment()).commit();
+        } else if (id == R.id.nav_settings) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new SettingsFragment()).commit();
+        } else if (id == R.id.nav_logout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new LogoutFragment()).commit();
+        } else if (id == R.id.nav_about) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new AboutFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

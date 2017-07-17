@@ -24,4 +24,8 @@ public class SignIn extends AppCompatActivity {
         Intent intent = new Intent(this, IntroScreen.class);
         startActivity(intent);
     }
+    public void getNewPasswordButton (View view){
+        Intent intent = new Intent(this, NewPassword.class);
+        startActivity(intent);
+    }
 }

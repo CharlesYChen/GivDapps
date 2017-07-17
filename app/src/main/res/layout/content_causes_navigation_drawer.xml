@@ -11,5 +11,10 @@
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="344dp"
-        android:layout_height="495dp" />
+        android:layout_height="495dp">
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:text="practice button, will implement soon"/>
+    </FrameLayout>
 </android.support.constraint.ConstraintLayout>

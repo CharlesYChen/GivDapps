@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by aznch on 6/28/2017.
  */
 
-public class FirstFragment extends Fragment{
+public class FavoritesFragment extends Fragment{
 
     View myView;
 
