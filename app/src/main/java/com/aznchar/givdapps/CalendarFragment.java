@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by aznch on 6/28/2017.
  */
 
-public class SecondFragment extends Fragment{
+public class CalendarFragment extends Fragment{
 
     View myView;
 

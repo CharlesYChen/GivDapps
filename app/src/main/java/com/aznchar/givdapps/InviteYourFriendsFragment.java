@@ -11,14 +11,14 @@ import android.view.ViewGroup;
  * Created by aznch on 6/28/2017.
  */
 
-public class ThirdFragment extends Fragment{
+public class InviteYourFriendsFragment extends Fragment{
 
     View myView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.donations_fragment, container, false);
+        myView = inflater.inflate(R.layout.invite_your_friends_fragment, container, false);
         return myView;
     }
 }

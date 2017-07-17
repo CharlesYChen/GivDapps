@@ -33,11 +33,14 @@
             android:name=".CausesNavigationDrawer"
             android:label="Campaign"
             android:theme="@style/AppTheme"/>
-
-        <activity android:name=".InterestScreen"></activity>
+        <activity
+            android:name=".InterestScreen"></activity>
         <activity
             android:name=".SignUpScreen"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NewPassword"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
