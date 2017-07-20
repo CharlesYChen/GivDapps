@@ -12,7 +12,7 @@ import android.widget.ImageView;
  * Created by aznch on 6/21/2017.
  */
 
-//code for making the image sliding on the intro screen
+//image slider for intro screen
 
 public class ViewPagerAdapter extends PagerAdapter {
 

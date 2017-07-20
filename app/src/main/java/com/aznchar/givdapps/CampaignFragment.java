@@ -11,19 +11,19 @@ import android.view.ViewGroup;
  * Created by aznch on 6/28/2017.
  */
 
-public class DonationsFragment extends Fragment{
-
+public class CampaignFragment extends Fragment{
     View myView;
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
+        getActivity().setTitle("Campaign");
 
-        getActivity().setTitle("Donations");
     }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.donations_fragment, container, false);
+        myView = inflater.inflate(R.layout.campaign_fragment, container, false);
         return myView;
     }
+
 }
