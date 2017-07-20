@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/campaign_fragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/non_scroll_categories"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/givdappsBlue"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/popular"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:text="Popular"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.25"
+            />
+        <Button
+            android:id="@+id/nearby"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:text="Nearby"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.25"
+            />
+        <Button
+            android:id="@+id/almost_funded"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:text="Almost Funded"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.25"
+            />
+        <Button
+            android:id="@+id/special"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:text="Special"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.25"
+            />
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/non_scroll_categories"
+        android:src="@drawable/causes_scroller"/>
+    <!--<ListView-->
+        <!--android:id="@+id/campaignListView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/non_scroll_categories">-->
+
+    <!--</ListView>-->
+</RelativeLayout>

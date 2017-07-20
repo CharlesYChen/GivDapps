@@ -28,6 +28,7 @@
         app:srcCompat="@drawable/whitebox"
         app:layout_constraintHorizontal_bias="0.0" />
 
+    <!--testing where the image goes-->
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
