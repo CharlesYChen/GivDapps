@@ -21,12 +21,14 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.55"
-            android:background="@android:color/transparent">
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="150dp">
         </Button>
 
 
         <!--need help on scaling word size to screensize-->
         <TextView
+            android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.1"
@@ -73,33 +75,54 @@
         <!--need to change color to match dropbox image, might
         crop the dropbox image to use as imagebutton-->
         <Button
+            android:id="@+id/buttSignIn"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.1"
-            android:background="@color/orange"
-            android:text="Sign In"
-            android:textSize="20sp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_weight="0.1"
+            android:background="@color/orange"
+            android:onClick="introButton"
+            android:text="Sign In"
+            android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textAllCaps="false"
-            android:onClick="introButton" />
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttSignIn"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="13sp"
+                android:background="@android:color/transparent"
+                android:text="Don't have an account?"
+                android:textColor="@color/facebook_blue"
+                android:layout_gravity="start"
+                android:onClick="getNewAccountButton"
+                android:textAllCaps="false"
+                />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="0.05"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="0dp"
-            android:background="@android:color/transparent"
-            android:text="Forgot Password?"
-            android:textColor="@color/facebook_blue"
-            android:textAlignment="textEnd"
-            android:layout_gravity="end"
-            android:onClick="getNewPasswordButton"
-            android:textAllCaps="false"
-            />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:text="Forgot Password?"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/facebook_blue"
+                android:layout_gravity="end"
+                android:textSize="13sp"
+                android:onClick="getNewPasswordButton"
+                android:textAllCaps="false"/>
+
+
+        </LinearLayout>
     </LinearLayout>
-
 
 </RelativeLayout>
