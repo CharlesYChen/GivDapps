@@ -90,13 +90,15 @@
             android:layout_height="0dp"
             android:layout_weight="0.05"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
             android:background="@android:color/transparent"
             android:text="Forgot Password?"
             android:textColor="@color/facebook_blue"
             android:textAlignment="textEnd"
             android:layout_gravity="end"
             android:onClick="getNewPasswordButton"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            />
     </LinearLayout>
 
 
