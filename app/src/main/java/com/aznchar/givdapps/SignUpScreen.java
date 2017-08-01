@@ -1,14 +1,23 @@
 package com.aznchar.givdapps;
 
+import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -19,7 +28,8 @@ import java.io.InputStream;
 public class SignUpScreen extends AppCompatActivity {
 
     public static final int IMAGE_GALLERY_REQUEST = 20;
-    private ImageView imgPicture;
+    private ImageButton profile_image;
+    View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +37,36 @@ public class SignUpScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        imgPicture = (ImageView) findViewById(R.id.imgPicture);
+        profile_image = (ImageButton) findViewById(R.id.profile_image);
+
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case 1: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    imageGallery(view);
+
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                    Toast.makeText(SignUpScreen.this, "Permission to read your external storage denied.", Toast.LENGTH_SHORT).show();
+                    break;
+                }
+                return;
+            }
+
+            // other 'case' lines to check for other
+            // permissions this app might request
+        }
+    }
+
     public void interestButton(View view){
 
         //uncomment below to prevent blank signup
@@ -41,8 +79,7 @@ public class SignUpScreen extends AppCompatActivity {
 //        String firstName = first_name.getText().toString();
 //        String lastName = last_name.getText().toString();
 //        String email_address = email_text.getText().toString();
-//        String set_password = password_text.getText().toString();
-//        if (firstName.trim().length() == 0) {
+//        String set_password.length() == 0) {
 //            Toast.makeText(this, "Please enter your first name.", Toast.LENGTH_SHORT).show();
 //        }
 //        else if(lastName.trim().length()==0){
@@ -54,7 +91,8 @@ public class SignUpScreen extends AppCompatActivity {
 //        else if(set_password.trim().length()==0){
 //            Toast.makeText(this, "Please enter a password.", Toast.LENGTH_SHORT).show();
 //        }
-//        else {
+//        else { = password_text.getText().toString();
+//        if (firstName.trim()
 //            Intent intent = new Intent(this, InterestScreen.class);
 //            startActivity(intent);
 //        }
@@ -63,16 +101,25 @@ public class SignUpScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     public void imageGallery(View v){
-        Intent photoPicker = new Intent(Intent.ACTION_PICK);
-        File pictureDirectory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
-        String pictureDirectoryPath = pictureDirectory.getPath();
-        Uri data = Uri.parse(pictureDirectoryPath);
 
-        // * gets all image types
-        photoPicker.setDataAndType(data, "image/*");
+        if (ContextCompat.checkSelfPermission(SignUpScreen.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(SignUpScreen.this,
+                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                    1);
+        }
+        else {
+            Intent photoPicker = new Intent(Intent.ACTION_PICK);
+            File pictureDirectory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+            String pictureDirectoryPath = pictureDirectory.getPath();
+            Uri data = Uri.parse(pictureDirectoryPath);
 
-        startActivityForResult(photoPicker, IMAGE_GALLERY_REQUEST);
+            // * gets all image types
+            photoPicker.setDataAndType(data, "image/*");
+
+            startActivityForResult(photoPicker, IMAGE_GALLERY_REQUEST);
+        }
     }
 
     @Override
@@ -85,10 +132,8 @@ public class SignUpScreen extends AppCompatActivity {
 
                 try {
                     inputStream = getContentResolver().openInputStream(imageUri);
-
                     Bitmap image = BitmapFactory.decodeStream(inputStream);
-
-                    imgPicture.setImageBitmap(image);
+                    profile_image.setImageBitmap(image);
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                     Toast.makeText(this, "Unable to open image", Toast.LENGTH_LONG).show();
