@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:id="@+id/campaign_fragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aznchar.givdapps.CampaignFragment">
 
     <LinearLayout
         android:id="@+id/non_scroll_categories"
@@ -53,17 +56,12 @@
             android:layout_weight="0.25"
             />
     </LinearLayout>
-    
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/non_scroll_categories"
-        android:src="@drawable/causes_scroller"/>
-    <!--<ListView-->
-        <!--android:id="@+id/campaignListView"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/non_scroll_categories">-->
 
-    <!--</ListView>-->
+    <ListView
+        android:id="@+id/campaignListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/non_scroll_categories">
+    </ListView>
+
 </RelativeLayout>
