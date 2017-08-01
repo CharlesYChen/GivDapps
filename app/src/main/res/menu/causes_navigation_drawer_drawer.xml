@@ -8,35 +8,35 @@
             android:title="Campaign" />
         <item
             android:id="@+id/nav_favorites"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_star"
             android:title="Favorites" />
         <item
             android:id="@+id/nav_calendar"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_calender"
             android:title="Calendar" />
         <item
             android:id="@+id/nav_donations"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_coin"
             android:title="Donations" />
         <item
             android:id="@+id/nav_history"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_clock"
             android:title="History" />
         <item
             android:id="@+id/nav_invite_your_friends"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_f"
             android:title="Invite your friends" />
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_settings"
             android:title="Settings" />
         <item
             android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_logout"
             android:title="Logout" />
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_about"
             android:title="About" />
     </group>
 
