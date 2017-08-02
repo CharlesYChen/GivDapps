@@ -41,6 +41,7 @@ public class InterestScreen extends AppCompatActivity {
                 String selectedItem = ((TextView)view).getText().toString();
                 if(selectedItems.contains(selectedItem)){
                     selectedItems.remove(selectedItem);
+                    view.setBackgroundColor(Color.WHITE);
                 }
                 else
                     selectedItems.add(selectedItem);
