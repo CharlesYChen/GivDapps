@@ -20,7 +20,7 @@ public class SignIn extends AppCompatActivity {
 
     }
 
-    public void introButton(View view){
+    public void signinButton(View view){
 
         //uncomment below to prevent blank signin attempt
 
@@ -42,7 +42,7 @@ public class SignIn extends AppCompatActivity {
 //            Intent intent = new Intent(this, IntroScreen.class);
 //            startActivity(intent);
 //        }
-        Intent intent = new Intent(this, IntroScreen.class);
+        Intent intent = new Intent(this, CausesNavigationDrawer.class);
         startActivity(intent);
     }
     public void getNewPasswordButton (View view){
@@ -50,7 +50,7 @@ public class SignIn extends AppCompatActivity {
         startActivity(intent);
     }
     public void getNewAccountButton (View view){
-        Intent intent = new Intent(this, SignUpScreen.class);
+        Intent intent = new Intent(this, IntroScreen.class);
         startActivity(intent);
     }
 }

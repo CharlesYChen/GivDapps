@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/non_scroll_categories"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:orientation="horizontal"
         android:background="@color/givdappsBlue"
         android:weightSum="1">
@@ -20,6 +20,7 @@
             android:layout_width="205dp"
             android:layout_height="match_parent"
             android:text="Popular"
+            android:textSize="12sp"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@android:color/transparent"
@@ -30,6 +31,7 @@
             android:layout_width="205dp"
             android:layout_height="match_parent"
             android:text="Nearby"
+            android:textSize="12sp"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@android:color/transparent"
@@ -40,6 +42,7 @@
             android:layout_width="205dp"
             android:layout_height="match_parent"
             android:text="Almost Funded"
+            android:textSize="12sp"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@android:color/transparent"
@@ -50,6 +53,7 @@
             android:layout_width="205dp"
             android:layout_height="match_parent"
             android:text="Special"
+            android:textSize="12sp"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@android:color/transparent"
@@ -61,7 +65,32 @@
         android:id="@+id/campaignListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/non_scroll_categories">
+        android:layout_below="@id/non_scroll_categories"
+        android:layout_above="@+id/non_scroll_buttons">
     </ListView>
+
+    <LinearLayout
+        android:id="@+id/non_scroll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/campaign_button"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/challenges_button"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
 
 </RelativeLayout>

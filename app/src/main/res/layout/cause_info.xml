@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aznchar.givdapps.CauseInfo">
+
+    <ImageButton
+        android:id="@+id/donate_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="150dp"
+        />
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentEnd="true"
+        android:text="Donate"
+        android:layout_below="@+id/donate_button"/>
+
+    <ImageView
+        android:id="@+id/content_image"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:src="@drawable/splashpage"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_below="@+id/start_text">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+            <ImageButton
+                android:id="@+id/favorites_button"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:text="5"/>
+            <ImageButton
+                android:id="@+id/comments_button"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:text="45"/>
+            <ImageButton
+                android:id="@+id/about_button"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_about"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu_camera"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="____$ Total Goal"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu_camera"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="____ Days Left"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu_camera"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="____$ Remaining"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu_camera"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="____ Donors"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55"
+            android:text="@string/sample_text"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
