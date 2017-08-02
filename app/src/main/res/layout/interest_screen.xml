@@ -18,7 +18,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.3"
+            android:layout_weight="0.2"
             android:background="@android:color/transparent"/>
 
         <!--trying to make the textsize scale with screensize, then
@@ -29,15 +29,17 @@
             android:layout_weight="0.1">
             <TextView
                 android:layout_width="match_parent"
+                android:textSize="25sp"
                 android:layout_height="wrap_content"
                 android:text="What causes interest you?"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.6"
+            android:layout_weight="0.7"
             android:orientation="vertical">
 
             <ListView
@@ -48,25 +50,28 @@
             </ListView>
 
         </LinearLayout>
-
+<!--
         <Button
             android:id="@+id/checklistButton"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Show selected items"
             android:onClick="showSelectedItems"/>
-
+checking if things are selected-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
             <Button
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/orange"
-                android:text="Causes"
+                android:text="Done"
+                android:textSize="15sp"
                 android:onClick="causesButton"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false"
+                />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
