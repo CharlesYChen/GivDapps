@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GivDapps</string>
     <string name="sign_up">Sign Up</string>
-    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo sem. Fusce egestas, velit nec rhoncus maximus, ante ligula interdum ante, eget hendrerit diam nulla id justo. Sed quis urna lobortis, commodo sem a, commodo diam. Nam finibus gravida nibh et feugiat. Pellentesque feugiat ipsum risus, volutpat congue risus tempus eget. Nullam consequat erat lacus, vel auctor neque malesuada ut. Pellentesque euismod commodo justo, ut suscipit diam fermentum in. Nulla et massa nec est facilisis blandit. Mauris placerat, massa sed lobortis faucibus, ligula turpis feugiat orci, eget porta risus sem eget augue. Fusce consequat cursus lectus, ut placerat lorem euismod id.</string>
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo sem. Fusce egestas, velit nec rhoncus maximus, ante ligula interdum ante, eget hendrerit diam nulla id justo. Sed quis urna lobortis, commodo sem a, commodo diam. Nam finibus gravida nibh et feugiat. Pellentesque feugiat ipsum risus, volutpat congue risus tempus eget. Nullam consequat erat lacus, vel auctor neque malesuada ut. Pellentesque euismod commodo justo, ut suscipit diam fermentum in. Nulla et massa nec est facilisis blandit.</string>
     <string name="title_activity_causes_navigation_drawer">causes_navigation_drawer</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

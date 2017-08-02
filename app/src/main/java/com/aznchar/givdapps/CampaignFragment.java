@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,10 +48,10 @@ public class CampaignFragment extends Fragment{
         //add sample data, will want to replace with code getting data from database here
 
         mCampaignList.add(new CampaignListElements("John Doe1", "@John_Doe1", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_gallery));
-        mCampaignList.add(new CampaignListElements("John Doe2", "@John_Doe2", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_gallery));
-        mCampaignList.add(new CampaignListElements("John Doe3", "@John_Doe3", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_gallery));
-        mCampaignList.add(new CampaignListElements("John Doe4", "@John_Doe4", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_gallery));
-        mCampaignList.add(new CampaignListElements("John Doe5", "@John_Doe5", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_gallery));
+        mCampaignList.add(new CampaignListElements("John Doe2", "@John_Doe2", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_manage));
+        mCampaignList.add(new CampaignListElements("John Doe3", "@John_Doe3", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_send));
+        mCampaignList.add(new CampaignListElements("John Doe4", "@John_Doe4", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_share));
+        mCampaignList.add(new CampaignListElements("John Doe5", "@John_Doe5", "SAMPLE TEXT", R.drawable.ic_menu_camera, R.drawable.ic_menu_slideshow));
 
         adapter = new CampaignListAdapter(getContext(), mCampaignList);
         campaignListView.setAdapter(adapter);
@@ -59,7 +60,9 @@ public class CampaignFragment extends Fragment{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 //insert code leading to info/donation page
-                Toast.makeText(getContext(), "Clicked product id =" + view.getTag(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), CauseInfo.class);
+                startActivity(intent);
+//                Toast.makeText(getContext(), "Clicked product id =" + view.getTag(), Toast.LENGTH_SHORT).show();
             }
         });
         return myView;

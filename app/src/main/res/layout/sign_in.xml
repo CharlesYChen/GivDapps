@@ -82,7 +82,7 @@
             android:layout_marginRight="20dp"
             android:layout_weight="0.1"
             android:background="@color/orange"
-            android:onClick="introButton"
+            android:onClick="signinButton"
             android:text="Sign In"
             android:textAllCaps="false"
             android:textColor="@color/white"

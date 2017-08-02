@@ -13,7 +13,7 @@ import java.util.List;
 public class CampaignListAdapter extends BaseAdapter{
 
     private Context mContext;
-    private List<CampaignListElements> mCampaignList;
+    public List<CampaignListElements> mCampaignList;
 
     public CampaignListAdapter(Context mContext, List<CampaignListElements> mCampaignList) {
         this.mContext = mContext;
@@ -38,6 +38,7 @@ public class CampaignListAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = View.inflate(mContext, R.layout.campaign_row, null);
+
         TextView name = (TextView) v.findViewById(R.id.header_name);
         TextView tag_name = (TextView) v.findViewById(R.id.header_tag_name);
         TextView header_text = (TextView) v.findViewById(R.id.header_text);
