@@ -1,4 +1,4 @@
-package com.aznchar.givdapps;
+package com.givdapps.androidapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

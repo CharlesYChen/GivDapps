@@ -1,15 +1,10 @@
-package com.aznchar.givdapps;
+package com.givdapps.androidapp;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
-import android.view.ViewGroup.LayoutParams;
-import android.widget.TextView;
 
 
 public class CauseInfo extends AppCompatActivity{

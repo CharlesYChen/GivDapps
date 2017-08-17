@@ -1,4 +1,4 @@
-package com.aznchar.givdapps;
+package com.givdapps.androidapp;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -7,23 +7,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by aznch on 6/28/2017.
- */
-
-public class FavoritesFragment extends Fragment{
+public class DonationsFragment extends Fragment{
 
     View myView;
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
 
-        getActivity().setTitle("Favorites");
+        getActivity().setTitle("Donations");
     }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.favorites_fragment, container, false);
+        myView = inflater.inflate(R.layout.donations_fragment, container, false);
         return myView;
     }
 }

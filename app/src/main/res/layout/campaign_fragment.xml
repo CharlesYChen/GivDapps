@@ -5,7 +5,7 @@
     android:id="@+id/campaign_fragment"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.aznchar.givdapps.CampaignFragment">
+    tools:context="com.givdapps.androidapp.CampaignFragment">
 
     <LinearLayout
         android:id="@+id/non_scroll_categories"

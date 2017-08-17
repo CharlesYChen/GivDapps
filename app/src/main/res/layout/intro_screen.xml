@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/intro_background"
-    tools:context="com.aznchar.givdapps.IntroScreen">
+    tools:context="com.givdapps.androidapp.IntroScreen">
 
     <!--in general, need help on scaling for entire thing. i was trying
     to do it with layout_weight but it doesnt work when i use nested
