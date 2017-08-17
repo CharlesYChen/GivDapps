@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Cancel"
+            android:textColor="@color/givdappsBlue"
+            android:background="@android:color/transparent"
+            android:onClick="cancelButton"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Payment Method"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Done"
+            android:textColor="@color/givdappsBlue"
+            android:background="@android:color/transparent"
+            android:onClick="doneButton"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/money_picture"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/gray"
+        android:layout_below="@+id/title"/>
+    <LinearLayout
+        android:id="@+id/email_section"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/money_picture"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Email"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:hint="notarealemail@gmail.com"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/card_section"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/email_section"
+        android:background="@color/gray"
+        android:text="Card"/>
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/card_input_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_section"/>
+
+    <TextView
+        android:id="@+id/billing_section"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/card_input_widget"
+        android:background="@color/gray"
+        android:text="Billing Address"/>
+
+
+</RelativeLayout>
+
+
+
