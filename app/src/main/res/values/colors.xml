@@ -8,6 +8,7 @@
     <color name="facebook_blue">#3b5998</color>
     <color name="orange">#fcba5c</color>
     <color name="givdappsBlue">#86B6E2</color>
+    <color name="gray_light">#d1e0e0</color>
     <color name="generalBackground">#f5f3e7</color>
     <color name="popupBackground">#80FFFFFF</color>
 </resources>

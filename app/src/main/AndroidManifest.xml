@@ -50,6 +50,9 @@
         <activity
             android:name=".DonateScreen"
             android:theme="@style/AppTheme.PopUpWindowTheme"/>
+        <activity
+            android:name=".PaymentMethod"
+            android:theme="@style/AppTheme"/>
 
     </application>
 
