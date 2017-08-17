@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.aznchar.givdapps.CausesNavigationDrawer"
+    tools:context="com.givdapps.androidapp.CausesNavigationDrawer"
     tools:showIn="@layout/app_bar_causes_navigation_drawer"
     android:id="@+id/content_causes_navigation_drawer">
 

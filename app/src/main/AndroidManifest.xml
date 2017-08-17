@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aznchar.givdapps">
+    package="com.givdapps.androidapp">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -15,7 +15,7 @@
 
         <!-- splashscreen logistics, the app loads this first -->
         <activity
-            android:name=".SplashBackground"
+            android:name="com.givdapps.androidapp.SplashBackground"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,34 +24,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".IntroScreen"
+            android:name="com.givdapps.androidapp.IntroScreen"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".CausesScroller"
+            android:name="com.givdapps.androidapp.CausesScroller"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".SignIn"
+            android:name="com.givdapps.androidapp.SignIn"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".CausesNavigationDrawer"
+            android:name="com.givdapps.androidapp.CausesNavigationDrawer"
             android:label="Campaign"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".InterestScreen"></activity>
+            android:name="com.givdapps.androidapp.InterestScreen"></activity>
         <activity
-            android:name=".NewPassword"
+            android:name="com.givdapps.androidapp.NewPassword"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".SignUpScreen"
+            android:name="com.givdapps.androidapp.SignUpScreen"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".CauseInfo"
+            android:name="com.givdapps.androidapp.CauseInfo"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".DonateScreen"
+            android:name="com.givdapps.androidapp.DonateScreen"
             android:theme="@style/AppTheme.PopUpWindowTheme"/>
         <activity
-            android:name=".PaymentMethod"
+            android:name="com.givdapps.androidapp.PaymentMethod"
             android:theme="@style/AppTheme"/>
 
     </application>

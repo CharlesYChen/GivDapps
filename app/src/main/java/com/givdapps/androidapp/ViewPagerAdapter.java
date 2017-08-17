@@ -1,4 +1,4 @@
-package com.aznchar.givdapps;
+package com.givdapps.androidapp;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -7,10 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
-/**
- * Created by aznch on 6/21/2017.
- */
 
 //image slider for intro screen
 

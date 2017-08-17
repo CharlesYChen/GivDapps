@@ -33,30 +33,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:id="@+id/donate_options"
-            android:divider="?android:attr/dividerHorizontal"
-            android:showDividers="middle">
+            android:id="@+id/donate_options">
             <RadioButton
+                android:id="@+id/donate_five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$5.00"
                 android:onClick="onRadioButtonClicked"/>
             <RadioButton
+                android:id="@+id/donate_ten"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$10.00"
                 android:onClick="onRadioButtonClicked"/>
             <RadioButton
+                android:id="@+id/donate_twenty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$20.00"
                 android:onClick="onRadioButtonClicked"/>
             <RadioButton
+                android:id="@+id/donate_fifty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$50.00"
                 android:onClick="onRadioButtonClicked"/>
             <RadioButton
+                android:id="@+id/enter_donation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$ Enter Amount"

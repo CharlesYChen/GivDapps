@@ -1,10 +1,4 @@
-package com.aznchar.givdapps;
-
-import android.widget.ImageView;
-
-/**
- * Created by aznch on 8/1/2017.
- */
+package com.givdapps.androidapp;
 
 public class CampaignListElements {
 

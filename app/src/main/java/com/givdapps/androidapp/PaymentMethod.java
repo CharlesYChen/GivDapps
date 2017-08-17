@@ -1,6 +1,5 @@
-package com.aznchar.givdapps;
+package com.givdapps.androidapp;
 
-import com.stripe.android.model.Card;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +19,7 @@ public class PaymentMethod extends Activity {
     }
     public void doneButton (View view){
         //need to get info from filled-in fields
-        Intent intent = new Intent(this, DonateScreen.class);
+        Intent intent = new Intent(this, CauseInfo.class);
         startActivity(intent);
     }
 }

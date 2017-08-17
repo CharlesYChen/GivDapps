@@ -1,4 +1,4 @@
-package com.aznchar.givdapps;
+package com.givdapps.androidapp;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.aznchar.givdapps;
+package com.givdapps.androidapp;
 
 import android.content.Context;
 import android.view.View;
