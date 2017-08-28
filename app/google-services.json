@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "719061856282",
+    "firebase_url": "https://givdappsfirebase.firebaseio.com",
+    "project_id": "givdappsfirebase",
+    "storage_bucket": "givdappsfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719061856282:android:ba4c73cab0375ce4",
+        "android_client_info": {
+          "package_name": "com.givdapps.androidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719061856282-743fp6cv6gg1oq87tqdsh7i6cuirm31r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlrzGlFnqeHFfiJaBfy2pHhus6NAzXE-s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
