@@ -23,7 +23,14 @@
         android:layout_alignParentEnd="true"
         android:text="Donate"
         android:layout_below="@+id/donate_button"/>
-
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:text="EXIT"
+        android:background="@color/orange"
+        android:onClick="exit_button"/>
     <ImageView
         android:id="@+id/content_image"
         android:layout_width="match_parent"

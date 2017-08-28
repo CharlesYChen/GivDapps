@@ -24,4 +24,8 @@ public class CauseInfo extends AppCompatActivity{
             }
         });
     }
+    public void exit_button (View view){
+        Intent intent = new Intent(this, CausesNavigationDrawer.class);
+        startActivity(intent);
+    }
 }

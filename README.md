@@ -1,18 +1,25 @@
 # GivDapps
 Android Application for GivDapps
 
-7/21/17 - Solved some problems.
-7/18/17 - Getting closer to very very basic front-end stuff done.
+8/27/17 - To-Do List for the future.
+1. Finish screens such as get new password, donation history, etc. for visuals and functionality
+2. Integrate Stripe account with the app, connect it with the current screens
+3. Obtain correct images and icons and replace current ones
+4. Connect to firebase database, user authentication.
+5. Campaign list with cause info, etc.
+
+7/21/17 - Resolved some issues.
+7/18/17 - Getting closer to some basic front-end stuff done.
 
 Things to do:
 1. Center title for each fragment in the navbar
-~~2. Figure out make each fragment have its own exclusive screen so that things don't carry over when switching~~
+2. Figure out make each fragment have its own exclusive screen so that things don't carry over when switching
 3. Solve unchecking boxes issue for interest screen
 4. Figure out why app crashes when uploading a picture (not sure what's wrong)
 5. Add a redirect link to signup page to the left of the "Forgot Password" link in the signin page
-~~6. Begin coding so that you can't progress through screens without entering in something~~
+6. Begin coding so that you can't progress through screens without entering in something
 6.1. Connect to aws servers
-~~7. Add redirect page back to campaign page on the navbar?~~
+7. Add redirect page back to campaign page on the navbar?
 8. Need to know what layout looks like for Favorites, Donations, History, and About fragments
 9. Fix formatting for the header on the navbar; picture is a bit cutoff
 9.1. Fix name scaling so that a very long name will have small text, etc.
