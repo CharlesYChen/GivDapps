@@ -11,4 +11,5 @@
     <color name="gray_light">#d1e0e0</color>
     <color name="generalBackground">#f5f3e7</color>
     <color name="popupBackground">#80FFFFFF</color>
+    <color name="navy">#000080</color>
 </resources>
